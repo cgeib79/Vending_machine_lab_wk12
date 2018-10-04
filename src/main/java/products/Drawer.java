@@ -1,3 +1,5 @@
+package products;
+
 public enum Drawer {
     A1,
     A2,

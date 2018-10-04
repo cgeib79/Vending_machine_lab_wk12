@@ -1,3 +1,5 @@
+package products;
+
 public enum Coins {
 
     POUND(1.00),

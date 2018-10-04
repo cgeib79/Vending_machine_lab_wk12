@@ -1,3 +1,5 @@
+package products;
+
 import products.Product;
 import products.Sweet;
 
