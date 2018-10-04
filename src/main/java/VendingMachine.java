@@ -1,17 +1,25 @@
+import products.Product;
+import products.Sweet;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class VendingMachine {
 
-    private String products;
-//    private double coin;
+    private ArrayList<Product> products;
+
     private double price;
+//    Sweet sweet;
 
 
 
-    public VendingMachine(String products, double price) {
-        this.products = products;
+    public VendingMachine(double price, Sweet sweet) {
+        this.products = new ArrayList<>();
         this.price = price;
+//        this.sweet = sweet;
     }
 
-    public String getProduct() {
+    public ArrayList<Product> getProduct() {
         return this.products;
     }
 
@@ -19,8 +27,20 @@ public class VendingMachine {
         return this.price;
     }
 
+    public void setProducts(ArrayList<Product> products) {
+        this.products = products;
+    }
 
-//    public double getCoin() {
+
+    public int getProductCount() {
+        return this.products.size();
+    }
+
+    public void addProduct(Product product) {
+        this.products.add(product);
+    }
+
+    //    public double getCoin() {
 //        return coin;
 //    }
 }
