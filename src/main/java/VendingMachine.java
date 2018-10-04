@@ -1,15 +1,22 @@
 public class VendingMachine {
 
-    private double coin;
     private String products;
+//    private double coin;
+    private double price;
 
-    public VendingMachine(String products, double coin) {
+
+
+    public VendingMachine(String products, double price) {
         this.products = products;
-        this.coin = coin;
+        this.price = price;
     }
 
     public String getProduct() {
         return this.products;
+    }
+
+    public double getPrice() {
+        return this.price;
     }
 
 
